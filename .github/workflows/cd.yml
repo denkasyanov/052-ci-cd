@@ -1,3 +1,5 @@
+name: cd
+
 on:
   push:
     branches: [main]
@@ -47,5 +49,5 @@ jobs:
             --image=us-central1-docker.pkg.dev/graphite-byte-465521-d3/notely-ar-repo/notely:${{ github.sha }} \
             --region=us-central1 \
             --allow-unauthenticated \
-            --project=graphite-byte-465521-d3
+            --project=graphite-byte-465521-d3 \
             --max-instances=4
